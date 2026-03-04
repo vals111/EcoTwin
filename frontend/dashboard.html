@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>EcoTwin Dashboard</h1>
+<button class="primary-btn" onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+<ul>
+<li>Overview</li>
+<li>Simulation</li>
+<li>Forecast</li>
+<li>Explainability</li>
+<li>History</li>
+</ul>
+</div>
+
+<div class="content">
+
+<div class="card">
+<h2>Energy System</h2>
+<p id="energy-data"></p>
+
+<input id="energy-input" class="styled-input" placeholder="Update energy">
+<button class="primary-btn" onclick="updateEnergy()">Update</button>
+</div>
+
+<div class="card">
+<h2>Water System</h2>
+<p id="water-data"></p>
+
+<input id="water-input" class="styled-input" placeholder="Update water">
+<button class="primary-btn" onclick="updateWater()">Update</button>
+</div>
+
+<div class="card">
+<h2>Traffic System</h2>
+<p id="traffic-data"></p>
+
+<input id="traffic-input" class="styled-input" placeholder="Update traffic">
+<button class="primary-btn" onclick="updateTraffic()">Update</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

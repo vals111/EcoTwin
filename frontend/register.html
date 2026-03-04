@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="content" style="max-width:400px;margin:auto;margin-top:120px">
+
+<h2>Create Account</h2>
+
+<input id="email" class="styled-input" placeholder="Email">
+
+<input id="username" class="styled-input" placeholder="Username">
+
+<input id="password" type="password" class="styled-input" placeholder="Password">
+
+<button class="primary-btn" onclick="register()">Register</button>
+
+<div id="otp-section" style="display:none">
+
+<input id="otp" class="styled-input" placeholder="Enter OTP">
+
+<button class="primary-btn" onclick="verifyOTP()">Verify OTP</button>
+
+</div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>
